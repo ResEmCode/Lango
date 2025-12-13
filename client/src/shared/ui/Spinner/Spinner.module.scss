@@ -1,0 +1,50 @@
+.spinner {
+  border: 2px solid var(--color-section);
+  border-radius: 50%;
+  border-top-color: var(--color-primary);
+
+  animation: spinner 1s linear infinite;
+  background-color: transparent;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ----Size---- */
+
+.size_16 {
+  width: 16px;
+  height: 16px;
+}
+
+.size_24 {
+  width: 24px;
+  height: 24px;
+}
+
+.size_32 {
+  width: 32px;
+  height: 32px;
+}
+
+.size_48 {
+  width: 48px;
+  height: 48px;
+}
+
+.size_64 {
+  width: 64px;
+  height: 64px;
+}
+
+.size_128 {
+  width: 128px;
+  height: 128px;
+}

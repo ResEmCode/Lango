@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: var(--color-text);
+  background: conic-gradient(
+    from 330deg at 50% 50%,
+    var(--grad-1) 0deg,
+    var(--grad-2) 90deg,
+    var(--grad-3) 180deg,
+    var(--grad-4) 270deg,
+    var(--grad-1) 360deg
+  );
+
+  background-size: 100% 100%;
+  background-blend-mode: screen;
+  overflow: hidden;
+
+  font: var(--font-m);
+}

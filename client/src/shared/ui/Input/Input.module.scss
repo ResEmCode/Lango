@@ -1,0 +1,50 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font: var(--font-m);
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 12px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #000000;
+
+  font: var(--font-m);
+  font-size: 14px;
+  line-height: 20px;
+
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+
+.input:hover {
+  border-color: #9ca3af;
+}
+
+.input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+
+.input:disabled {
+  background: #f3f4f6;
+  color: #9ca3af;
+  border-color: #e5e7eb;
+  cursor: not-allowed;
+}
+
+

@@ -1,0 +1,56 @@
+*{
+  width: #000;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+//------Typography---
+
+.typography_inner {
+  color: #ffffff;
+  font-family: Helvetica, sans-serif;
+}
+
+.typography_content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.typography_block {
+  display: flex;
+  color: #ffffff;
+  gap: 20px;
+}
+
+.typography_info {
+  display: flex;
+  color: #73828c;
+  gap: 6px;
+}
+
+// ------Icons---
+.icons_wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.icon_block {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #575970;
+  border-radius: 4px;
+  gap: 12px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,8 @@
+{
+    "navbar.dashboard":"Dashboard",
+    "navbar.resources":"Resources",
+    "navbar.profile":"Profile"  ,
+    "navbar.settings":"Settings",
+    "navbar.button.premium":"Let's start",
+    "navbar.image.desc":"Unlock more features with a <accent>premium</accent> subscription!" 
+}

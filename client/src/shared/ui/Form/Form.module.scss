@@ -1,0 +1,11 @@
+
+.primary {
+  padding: 24px;
+  background-color: var(--modal-background);
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  max-width: 400px;
+  width: 100%;
+}

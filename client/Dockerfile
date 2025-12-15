@@ -11,13 +11,12 @@ COPY . .
 
 RUN npm run build
 
-FROM fholzer/nginx-brotli:latest
 
-COPY ../infra/nginx.conf /etc/nginx/conf.d/default.conf
+FROM alpine:3.19
+WORKDIR /app
+COPY --from=builder /app/dist ./dist
 
-COPY --from=builder /app/dist /usr/share/nginx/html
 
-EXPOSE 80
 
 
 

@@ -15,13 +15,13 @@ export const useLoginForm = () => {
     },
   });
 
+  const onSubmit = form.handleSubmit((values) => {
+    alert(JSON.stringify(values));
+  });
+
   useEffect(() => {
     form.setFocus('login');
   }, [form, form.setFocus]);
-
-  const onSubmit = (values: LoginFormValues) => {
-    alert(values?.login);
-  };
 
   return {
     form,

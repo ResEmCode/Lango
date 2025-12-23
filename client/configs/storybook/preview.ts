@@ -1,4 +1,4 @@
-import { withThemeByClassName } from '@storybook/addon-themes';
+import { withThemeByDataAttribute } from '@storybook/addon-themes';
 import type { Preview } from '@storybook/react-vite';
 import { setupWorker } from 'msw/browser';
 
@@ -28,12 +28,11 @@ const preview: Preview = {
   decorators: [
     StyleDecorator,
     RouterDecorator,
-    withThemeByClassName({
-      themes: {
-        twitter: 'theme-twt',
-        facebook: 'theme-fb',
-      },
-      defaultTheme: 'twitter',
+    withThemeByDataAttribute({
+      themes: { light: 'light', dark: 'dark' },
+      defaultTheme: 'dark',
+      attributeName: 'data-theme',
+      parentSelector: 'body',
     }),
   ],
 };

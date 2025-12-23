@@ -1,5 +1,5 @@
-*{
-  width: #000;
+* {
+  width: #000000;
 }
 
 .title {
@@ -8,10 +8,10 @@
   font-weight: 600;
 }
 
-//------Typography---
+// ------Typography---
 
 .typography_inner {
-  color: #ffffff;
+  color: #7f7f7f;
   font-family: Helvetica, sans-serif;
 }
 
@@ -23,7 +23,7 @@
 
 .typography_block {
   display: flex;
-  color: #ffffff;
+  color: #1c1c1c;
   gap: 20px;
 }
 
@@ -34,6 +34,7 @@
 }
 
 // ------Icons---
+
 .icons_wrapper {
   display: grid;
   gap: 20px;
@@ -45,7 +46,6 @@
   width: 100%;
   align-items: center;
   padding: 12px;
-  border: 1px solid #575970;
   border-radius: 4px;
   gap: 12px;
 }

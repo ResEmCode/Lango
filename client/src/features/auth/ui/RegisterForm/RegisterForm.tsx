@@ -17,7 +17,7 @@ export const RegisterForm = memo(({ onSwap }: RegisterFormProps) => {
   } = form;
 
   return (
-    <Form form={form} onSubmit={onSubmit} className={styles.form}>
+    <Form onSubmit={onSubmit} className={styles.form}>
       <Typography tag='h2' variant='bold_24'>
         Registration
       </Typography>
@@ -38,7 +38,7 @@ export const RegisterForm = memo(({ onSwap }: RegisterFormProps) => {
         error={errors.password?.message}
       />
 
-      <Checkbox {...register('agreeToTerms')} error={errors.agreeToTerms}>
+      <Checkbox {...register('agreeToTerms')} error={errors.agreeToTerms?.message}>
         I agree to the <a>Terms and Conditions</a>
       </Checkbox>
 

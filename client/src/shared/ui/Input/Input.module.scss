@@ -5,10 +5,10 @@
 }
 
 .label {
+  color: #000000;
   font: var(--font-m);
   font-size: 14px;
   line-height: 20px;
-  color: #000;
 }
 
 .input {
@@ -36,14 +36,14 @@
 
 .input:focus {
   border-color: #2563eb;
-  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+  box-shadow: 0 0 0 2px rgb(37 99 235 / 0.2);
 }
 
 
 .input:disabled {
+  border-color: #e5e7eb;
   background: #f3f4f6;
   color: #9ca3af;
-  border-color: #e5e7eb;
   cursor: not-allowed;
 }
 

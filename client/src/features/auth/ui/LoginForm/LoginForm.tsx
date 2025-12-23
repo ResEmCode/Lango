@@ -13,7 +13,7 @@ export const LoginForm = memo(({ onSwap }: LoginFormProps) => {
   const { register, formState } = form;
 
   return (
-    <Form form={form} onSubmit={onSubmit}>
+    <Form onSubmit={onSubmit}>
       <Typography tag={'h2'} variant={'bold_24'}>
         Authorization
       </Typography>

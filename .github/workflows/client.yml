@@ -1,4 +1,4 @@
-name: client.yml
+name: client.ci
 on:
   push:
     branches:
@@ -13,7 +13,7 @@ on:
       - 'client/**'
 
 jobs:
-  build:
+  build-client:
     runs-on: ubuntu-22.04
     defaults:
       run:

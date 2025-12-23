@@ -40,7 +40,7 @@ export const AsideMenu = memo((props: AsideMenuProps) => {
     }
   }, [locale]);
 
-  //test
+  //testt
 
   return (
     <aside className={clsx(styles.aside, [className])}>

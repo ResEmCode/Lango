@@ -1,30 +1,35 @@
 
-FROM node:20-alpine as builder
+FROM node:22-alpine as builder
 
 WORKDIR /app
 
 COPY package*.json ./
-COPY prisma ./prisma/
-
-
-RUN npm ci && npx prisma generate
+RUN npm ci
 
 COPY . .
+
+RUN npx prisma generate
 
 
 RUN npm run build && npm cache clean --force
 
-FROM node:20-alpine
+FROM node:22-alpine
 
 WORKDIR /app
+
+COPY --chown=node:node docker/entrypoint.sh ./entrypoint.sh
+RUN chmod +x ./entrypoint.sh
 
 COPY --from=builder --chown=node:node /app/node_modules ./node_modules
 COPY --from=builder --chown=node:node /app/package*.json ./
 COPY --from=builder --chown=node:node /app/dist ./dist
 COPY --from=builder --chown=node:node /app/prisma ./prisma
 
+
+COPY --from=builder --chown=node:node /app/prisma.config.ts ./
+
 USER node
 
 EXPOSE 3000
 
-CMD ["node", "dist/src/main"]
+ENTRYPOINT ["./entrypoint.sh"]

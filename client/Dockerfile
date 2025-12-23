@@ -12,7 +12,7 @@ COPY . .
 RUN npm run build
 
 
-FROM alpine:3.19
+FROM alpine:20-alpine
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
 

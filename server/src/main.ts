@@ -29,6 +29,8 @@ async function bootstrap() {
     },
   });
 
+  // app.setGlobalPrefix('api');
+
   const port = configService.get<number>('PORT') || 5000;
   await app.listen(port);
 

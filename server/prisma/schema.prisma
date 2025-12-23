@@ -3,7 +3,7 @@ generator client {
   output   = "./generated/prisma"
 }
 
-//Test pipeline for server
+//test pipeline for server
 
 datasource db {
   provider = "postgresql"

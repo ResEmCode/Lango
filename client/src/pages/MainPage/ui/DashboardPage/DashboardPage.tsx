@@ -3,6 +3,13 @@ import { Button, Page, Typography } from '@/shared/ui';
 
 import styles from './DashboardPage.module.scss';
 
+const mockImages = [
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJxOLfDct_vEPdS-6OsRnS-kDl_HCv5nI2A&s',
+  `https://st3.depositphotos.com/3557671/12561/v/450/
+  depositphotos_125614312-stock-illustration-woman-icon-cartoon-single-avatarpeaople.jpg`,
+  'https://www.svgrepo.com/show/382097/female-avatar-girl-face-woman-user-9.svg',
+];
+
 const DashboardPage = () => {
   return (
     <Page aria-labelledby={SECTION_TITLE_ID} tag='section' className={styles.main}>
@@ -26,31 +33,19 @@ const DashboardPage = () => {
         </Typography>
         <ul className={styles.user_list}>
           <li className={styles.user}>
-            <img
-              className={styles.avatar}
-              src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIJxOLfDct_vEPdS-6OsRnS-kDl_HCv5nI2A&s'
-              alt=''
-            />
+            <img className={styles.avatar} src={mockImages[0]} alt='avatar image' />
             <Typography tag='span' variant='medium_16'>
               Mike Stupid
             </Typography>
           </li>
           <li className={styles.user}>
-            <img
-              className={styles.avatar}
-              src='https://st3.depositphotos.com/3557671/12561/v/450/depositphotos_125614312-stock-illustration-woman-icon-cartoon-single-avatarpeaople.jpg'
-              alt=''
-            />
+            <img className={styles.avatar} src={mockImages[1]} alt='avatar image' />
             <Typography tag='span' variant='medium_16'>
               Alice girl
             </Typography>
           </li>
           <li className={styles.user}>
-            <img
-              className={styles.avatar}
-              src='https://www.svgrepo.com/show/382097/female-avatar-girl-face-woman-user-9.svg'
-              alt=''
-            />
+            <img className={styles.avatar} src={mockImages[2]} alt='avatar image' />
             <Typography tag='span' variant='medium_16'>
               Terminato 1C
             </Typography>

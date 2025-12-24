@@ -62,7 +62,7 @@ export const AsideMenu = memo((props: AsideMenuProps) => {
               alt='avatar'
             />
             <Typography tag='h2' variant='bold_20' type='title'>
-              Alex Hex
+              Alex Hexxx
             </Typography>
             <Typography tag='h4' variant='medium_16' type='title'>
               Alex@gmail.com

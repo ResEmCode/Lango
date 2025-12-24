@@ -20,9 +20,9 @@ export const useRegisterForm = () => {
     form.setFocus('email');
   }, [form, form.setFocus]);
 
-  const onSubmit = (values: RegisterFormValues) => {
-    alert(values?.email);
-  };
+  const onSubmit = form.handleSubmit((values) => {
+    alert(JSON.stringify(values));
+  });
 
   return {
     form,

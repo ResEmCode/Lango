@@ -4,7 +4,7 @@ import styles from "./Spinner.module.scss";
 
 type SpinnerSizes = "16" | "24" | "32" | "48" | "64" | "128";
 
-interface SpinnerProps {
+export interface SpinnerProps {
   size?: SpinnerSizes;
   border?: number;
 }

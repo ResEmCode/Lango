@@ -1,11 +1,11 @@
-import { type InputHTMLAttributes, memo, useId } from 'react';
+import { type ComponentProps, memo, useId } from 'react';
 import clsx from 'clsx';
 
 import { Typography } from '../Typography/Typography';
 
 import styles from './Input.module.scss';
 
-interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends ComponentProps<'input'> {
   label?: string;
   error?: string;
 }
@@ -16,7 +16,7 @@ export const Input = memo((props: InputProps) => {
   const id = useId();
 
   return (
-    <div className={clsx(styles.inputWrapper, className)}>
+    <div className={clsx(styles.input_wrapper, className)}>
       {label && (
         <label htmlFor={id} className={styles.label}>
           {label}

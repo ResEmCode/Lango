@@ -1,12 +1,11 @@
 import { type CSSProperties, memo, type ReactNode } from 'react';
-import type { FieldError } from 'react-hook-form';
 import clsx from 'clsx';
 
 import { Typography } from '../Typography/Typography';
 
 import styles from './Checkbox.module.scss';
 
-interface CheckboxProps {
+export interface CheckboxProps {
   className?: string;
   style?: CSSProperties;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -15,7 +14,7 @@ interface CheckboxProps {
   disabled?: boolean;
   value?: string | number;
   size?: 'small' | 'medium' | 'large';
-  error?: FieldError;
+  error?: string;
 }
 
 export const Checkbox = memo((props: CheckboxProps) => {
@@ -47,7 +46,7 @@ export const Checkbox = memo((props: CheckboxProps) => {
       {children && <span className={styles.text}>{children}</span>}
       {error && (
         <Typography tag={'p'} type={'error'} variant={'regular_14'}>
-          {error.message}
+          {error}
         </Typography>
       )}
     </label>

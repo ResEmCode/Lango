@@ -1,9 +1,5 @@
 import { memo } from 'react';
 
-interface JourneyProps {}
-
-export const Journey = memo((props: JourneyProps) => {
-  const {} = props;
-
+export const Journey = memo(() => {
   return <div>Journey</div>;
 });

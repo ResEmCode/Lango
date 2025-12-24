@@ -19,21 +19,21 @@ export interface FlexProps {
 }
 
 const justifyClasses: Record<FlexJustify, string> = {
-  start: styles.justifyStart,
-  center: styles.justifyCenter,
-  end: styles.justifyEnd,
-  between: styles.justifyBetween,
+  start: styles.justify_start,
+  center: styles.justify_center,
+  end: styles.justify_end,
+  between: styles.justify_between,
 };
 
 const alignClasses: Record<FlexAlign, string> = {
-  start: styles.alignStart,
-  center: styles.alignCenter,
-  end: styles.alignEnd,
+  start: styles.align_start,
+  center: styles.align_center,
+  end: styles.align_end,
 };
 
 const directionClasses: Record<FlexDirection, string> = {
-  column: styles.directionRow,
-  row: styles.directionColumn,
+  column: styles.direction_row,
+  row: styles.direction_column,
 };
 
 const gapClasses: Record<FlexGap, string> = {

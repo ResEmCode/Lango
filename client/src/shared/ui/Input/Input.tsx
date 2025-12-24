@@ -16,7 +16,7 @@ export const Input = memo((props: InputProps) => {
   const id = useId();
 
   return (
-    <div className={clsx(styles.inputWrapper, className)}>
+    <div className={clsx(styles.input_wrapper, className)}>
       {label && (
         <label htmlFor={id} className={styles.label}>
           {label}

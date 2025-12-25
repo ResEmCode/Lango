@@ -10,6 +10,7 @@
   justify-content: flex-start;
 }
 
+<<<<<<< HEAD
 .justify_center {
   justify-content: center;
 }
@@ -19,6 +20,17 @@
 }
 
 .justify_between {
+=======
+.justifyCenter {
+  justify-content: center;
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.justifyBetween {
+>>>>>>> 49a49fd (fix: client lint error)
   justify-content: space-between;
 }
 
@@ -26,11 +38,19 @@
   align-items: flex-start;
 }
 
+<<<<<<< HEAD
 .align_center {
   align-items: center;
 }
 
 .align_end {
+=======
+.alignCenter {
+  align-items: center;
+}
+
+.alignEnd {
+>>>>>>> 49a49fd (fix: client lint error)
   align-items: flex-end;
 }
 
